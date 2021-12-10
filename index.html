@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Uali</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="zodiac.html">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo-container">
+          <span class="text-U">U</span>
+          <span class="text-a">a</span>
+          <span class="text-l">l</span>
+          <span class="text-i">i</span>
+        </div>
+      </nav>
+    </header>
+
+    <section id="date-of-birth-input">
+      <label for="date-input">Enter the date of Birth</label>
+      <input id="date-input" name="date" type="text" placeholder="Enter date">
+      <label for="month">Enter the month of birth</label>
+      <select id="month" name="month">
+        <option value="Jan">January</option>
+        <option value="Feb">February</option>
+        <option value="Mar">March</option>
+        <option value="Apr">April</option>
+        <option value="May">May</option>
+        <option value="Jun">June</option>
+        <option value="Jul">July</option>
+        <option value="Aug">August</option>
+        <option value="Sep">September</option>
+        <option value="Oct">October</option>
+        <option value="Nov">November</option>
+        <option value="Dec">December</option>
+      </select>
+      <label for="year-input">Enter the year of Birth</label>
+      <input id="year-input" name="year" type="text" placeholder="Enter Year">
+      <input class="submit-button" onclick="getZodiac()" type="submit" value="Submit">
+    </section>
+
+    <section id="zodiac-details">
+      <div class="zodiac-details-container">
+        <div class="gregorian">
+          <h1 class="main-heading">Gregorian Zodiac</h1>
+          <div class="gregorian-zodiac-details">
+            <div class="gregorian-heading">
+            </div>
+            <div class="gregorian-date-range">
+            </div>
+            <div class="gregorian-zodiac-detail">
+            </div>
+          </div>
+        </div>
+
+        <div class="chinese">
+          <h1 class="main-heading">Chinese Zodiac</h1>
+          <div class="chinese-zodiac-details">
+            <div class="chinese-heading">
+            </div>
+            <div class="chinese-year">
+            </div>
+            <div class="chinese-zodiac-detail">
+            </div>
+        </div>
+        </div>
+      </div>
+
+    </section>
+
+    <script type="text/javascript" src="strings.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
